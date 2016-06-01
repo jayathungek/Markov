@@ -1,6 +1,7 @@
 from __future__ import print_function
 import random
 import sys
+# -*- coding: utf-8 -*-
 
 
 """
@@ -36,6 +37,7 @@ w2 = ""
 output_file = INPUT_TEXT_FILES[0][:-4]+"_output.txt"
 
 with open(output_file, 'a') as out:
+	print("\n\n", file=out)
 	for j in range(max_lines):
 		newLine = ""
 		for i in range(20):
@@ -44,5 +46,5 @@ with open(output_file, 'a') as out:
 			w1,w2 = w2,word
 		print(newLine)
 		print(newLine, file=out)
-
+		
 out.close()
