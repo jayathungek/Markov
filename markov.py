@@ -31,7 +31,7 @@ for i in range(len(INPUT_TEXT_FILES)):
 
 #Use table to print out a random piece of text
 MAX_WORDS = int(sys.argv[1])
-max_lines = MAX_WORDS/20 # 20 is the arbitrary number of words per line
+max_lines = int (MAX_WORDS/20) # 20 is the arbitrary number of words per line
 w1 = ""
 w2 = ""
 output_file = INPUT_TEXT_FILES[0][:-4]+"_output.txt"
